@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caja</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            color: #000;
+            margin: 10px;
+            line-height: 70px;
+            text-align: center;
+        }
+    
+    .caja-1{
+        display: block;
+        /* ocupa todo el contenido */
+    }
+    .caja-2{
+        display: inline;
+        /* Nada mas ocupa su contenido, es decir esta en línea */
+    }
+    .caja-2{
+        display: inline-block;
+        /* se puede comportar tanto en línea como en bloque quiere decir que deja 
+        poner padding y margin
+         */
+    }
+    /* EJERCICIO 3 */
+    img{
+        width: 100px;
+        height: 100px;
+        /* La imagen se distribuye 100px verticalmente  y 100px horizontalmente*/
+    }
+
+    .karol-g{
+        width: 200px;
+        height: 200px;
+                /* La imagen se distribuye 200px verticalmente  y 200px horizontalmente*/
+
+    }
+    .ejercicio-4{
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        
+        box-sizing: border-box;/*No permite se mantega fijo cuando le pongamos propiedades como lo son, padding o margin, el contenido va ocupar el mismo tamaño.*/
+        
+    }
+    .img-ejercicio-4{
+        width: 100px;
+        height: 100px;
+        border: 5px solid;
+    }
+
+
+    </style>
+</head>
+<body>
+    <!-- EJERCICIO 1 -->
+    <!-- mark resalta palabras importante del texto -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut dicta odit illum, sunt, dolore voluptatem <mark>velit quos debitis dignissimos </mark> necessitatibus sint porro. Maxime ex nesciunt cum odio quis blanditiis nihil.</p>
+
+    <!-- Ejercicio 2 -->
+    <div class="caja-1">FABIAN</div>
+    <div class="caja-2">FABIAN</div>
+    <div class="caja-3">FABIAN</div>
+
+    <!-- EJERCICIO 3 -->
+    <p>
+        <img  src="https://xoxo.news/__export/1603943314480/sites/xoxo/img/2020/10/29/karolg_122387738_1048290945615720_7990808673960133108_n_crop1603943272240.jpg_691115875.jpg" alt="foto karol g" title="karol g">
+    </p>
+
+    <!-- EJERCICIO 4 -->
+    <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae et repellendus quibusdam expedita non exercitationem sapiente dignissimos dolorum nulla sit? Soluta unde quisquam optio ab quis, in non aut iusto.</P>
+    <img class="karol-g" src="https://xoxo.news/__export/1603943314480/sites/xoxo/img/2020/10/29/karolg_122387738_1048290945615720_7990808673960133108_n_crop1603943272240.jpg_691115875.jpg" alt="Karolg">
+    <P>Optio facilis veniam beatae? Rem enim eos non fugiat sapiente ut, quasi harum reprehenderit corporis. Delectus repellat, cupiditate porro ratione doloribus adipisci labore sapiente quia culpa? Eos vel natus aliquid.</P>
+
+    <!-- EJERCICIO 5 -->
+
+    <div class="ejercicio-4">
+        <img class="img-ejercicio-4" src="https://xoxo.news/__export/1603943314480/sites/xoxo/img/2020/10/29/karolg_122387738_1048290945615720_7990808673960133108_n_crop1603943272240.jpg_691115875.jpg" alt="">
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

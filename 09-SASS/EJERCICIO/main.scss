@@ -1,0 +1,30 @@
+/*variable en sass*/
+$color-texto: #414141;
+$tamano-fuente: 18px;
+$margen-wrapper: 60px;
+$fondo-footer: yellow;
+$alto-header: 50px;
+$fondo-main: cyan;
+
+.main__content{
+    p{
+        color: $color-texto;
+        font-size: $tamano-fuente;
+
+    }
+
+}    
+.wrapper{
+    margin: $margen-wrapper;
+}    
+footer{
+    text-align: center;
+    height: $alto-header;
+    width: 100%;
+    line-height: 50px;
+    background-color: $fondo-footer;
+    
+}
+.main{
+    background-color: $fondo-main;
+}

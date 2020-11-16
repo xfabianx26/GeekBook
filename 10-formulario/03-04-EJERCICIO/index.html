@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="POST">
+        <h2>Create an account</h2>
+        <small>I'ts free and always will be.</small>
+        <p>
+            <label for="firstname"></label>
+            <input id="firstname" type="text" name="firstname" placeholder="First name" required>
+            <label for="surname"></label>
+            <input id="surname" type="text" name="surname" placeholder="Surname" >
+        </p>
+        <p>
+            <label for="email-mobile"></label>
+            <input type="email" name="email-mobile" id="email-mobile" placeholder="Email or moblie number" required>
+
+        </p>
+        <p>
+            <label for="re-email-mobile"></label>
+            <input type="email" name="re-email-mobile" id="re-email-mobile" placeholder="Re-enter email or moblie number" required>
+            
+        </p>
+        <p>
+            <label for="password"></label>
+            <input type="password" placeholder="New password" name="password" id="password" required>
+        </p>
+        <p>
+            <h3>Birthday</h3>
+            <select name="birthday[]" >
+                <option value="day"  selected>Day </option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <select name="month[]" >
+                <option value="month"  selected>Month </option>
+                <option value="enero">Enero</option>
+                <option value="febrero">Febrero</option>
+                <option value="marzo">Marzo</option>
+                <option value="abril">Abril</option>
+                <option value="mayo">Mayo</option>
+                <option value="junio">Junio</option>
+                <option value="julio">Julio</option>
+                <option value="agosto">Agosto</option>
+                <option value="septiembre">Septiembre</option>
+                <option value="octubre">Octubre</option>
+                <option value="noviembre">Noviembre</option>
+                <option value="diciembre">Diciembre</option>
+            </select>
+            <select name="year[]" >
+                <option value="year"  selected>Year </option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            Why do i need to provide my 8198 date od brith?
+        </p>
+        <p>
+            <input type="radio" name="female">Female 
+            <input type="radio" name="male" >Male
+
+        </p>
+        <p>
+            By clicking Create an account you agree to out Terms ad that <br>
+            you hava read our <strong>Data Policy</strong>, including our Cookies Use.
+        </p>
+        <input type="submit" value="Create an account">
+        <input type="reset" name="" value="Borrar dato">
+    </form>
+</body>
+</html>

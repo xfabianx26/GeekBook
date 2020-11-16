@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+  font-size: 12px;
+}
+.icon {
+  border: 1px solid black;
+  padding: .5em;
+  width: 3em;
+  height: 3em;
+  font-size: 10em;
+  /* font-size: 16px; */
+}
+.red-cross {
+  width: 3em;
+  height:3em;
+  position: relative;
+}
+.red-cross__item {
+  width: 1em;
+  height: 1em;
+  background: red;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.red-cross__item--1 {
+  left: 1em;
+}
+.red-cross__item--2 {
+  left: 2em;
+  top: 1em;
+}
+.red-cross__item--3 {
+  left: 1em;
+  top: 2em;
+}
+.red-cross__item--4 {
+  left: 0;
+  top: 1em;
+}
+.red-cross__item--5 {
+  left: 1em;
+  top: 1em;
+}
+.red-cross__label {
+  position: absolute;
+  left: -.5em;
+  top: 100%;
+  margin-top: 1.2em;
+  color: red;
+  font-weight: bold;
+  font-family: arial, sans-serif;
+  font-size: .6em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+    </style>
+</head>
+<body>
+    <div class="icon">
+        <div class="red-cross">
+          <div class="red-cross__item red-cross__item--1"></div>
+          <div class="red-cross__item red-cross__item--2"></div>
+          <div class="red-cross__item red-cross__item--3"></div>
+          <div class="red-cross__item red-cross__item--4"></div>
+          <div class="red-cross__item red-cross__item--5"></div>
+          <div class="red-cross__label">Red Cross</div>
+        </div>
+          
+          
+        </div>
+</body>
+</html>

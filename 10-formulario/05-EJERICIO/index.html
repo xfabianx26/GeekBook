@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 23%;
+            max-width: 1300px;
+            margin: 0 auto;
+            height: auto;
+            padding: 30px 30px 50px 30px;
+            background-color: #ccc;
+           
+        }
+         .gmail-emal {
+             width: 94%;
+           
+        }
+        input[type="email"]{
+            text-align: right;
+        }
+        .telefono1{
+            width: 75%;
+        }
+        .telefono2 {
+	    width: 16%;
+        }
+        input[type="submit"]{
+            padding: 14px;
+            color: #fff;
+            font-weight: bold;
+            background-color: #1a73e8;
+            border-radius: 10px;
+           
+        }
+        .enviar {
+	   text-align: right;
+	   padding-right: 10px;
+}
+    </style>
+</head>
+<body>
+    
+    <section class="container">
+        <form action="" method="POST">
+
+            <p>
+                <label for="nombre"><b>Nombre</b></label><br>
+                <input placeholder="Nombre" type="text" id="nombre" required>
+                <label for="apellido"></label>
+                <input placeholder="Apellido" type="text" id="apellido" required>
+            </p>
+            <p>
+                <label for="nombre-usuario"><b>Nombre de usuario</b></label><br>
+                <input class="gmail-emal" placeholder="@gamil.com" type="email" id="nombre-usuario" required>
+            </p>
+            <p>
+                <label for="password"><b>Contraseña</b></label><br>
+                <input class="gmail-emal" type="password" id="password" required>
+            </p>
+
+            <p>
+                <label for="conf-password"><b>Confirmar tu contraseña</b></label><br>
+                <input class="gmail-emal" type="password" id="conf-password" required>
+            </p>
+            <p> 
+                <label for="sexo"><b>Sexo</b></label><br>
+                <select id="sexo"  class="gmail-emal" name="sexo" i>
+                    <option value="seleciona">Seleciona tu género</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                </select>
+            </p>
+
+            <p> 
+                <label for="telefono"><b>Teléfono móvil</b></label><br>
+                 <input class="telefono2" type="text" name="" value="" placeholder="+34" required pattern="[a-z]{1,15}"  >
+                 <input class="telefono1" type="text" name="numero" id="numero" required pattern="[a-z]{1,15}" >
+            </p>
+            <p>
+                <label for="direccion"><b>Tu dirección de correo electrónico actual</b> </label><br>
+                <input class="gmail-emal" type="email" name="direccion-actual" required>
+
+            </p>
+            <p> 
+                <label for="ubicacion"><b>Ubicación</b></label><br>
+                <select id="ubicacion"  class="gmail-emal" name="ubicacion" required>
+                    <option value="espana">España</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="mexico">Mexico</option>
+                </select>
+            </p>
+        
+
+           <div class="enviar">
+            <input type="submit" value="Siguiente paso">
+           </div>
+        </form>
+    </section>
+
+  
+
+
+</body>
+</html>

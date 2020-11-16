@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-flow: column wrap;
+
+        }
+
+        .hijo1 {
+            background-color: gray;
+            padding: 0px 40px 40px 0;
+
+        }
+
+        .hijo1>h1 {
+            font-size: 38px;
+            font-weight: bold;
+        }
+
+        .hijo2 {
+            background-color: rgb(33, 207, 33);
+            font-size: 25px;
+        }
+
+        .hijo3 {
+            width: 40%;
+            background-color: yellow;
+
+        }
+        
+        .hijo3  .cuadro{
+            width: 20%;
+            background-color: orange;
+        }
+        .hijo3>h2 {
+            font-size: 34px;
+            font-weight: bold;
+        }
+        .hijo3 > p {
+            font-size: 25px;
+        }
+        .hijo4{
+            background-color: #ccc;
+            padding: 20px;
+        }
+        .hijo5{
+            background-color: gray;
+            padding-bottom: 11px;
+            
+        }
+        .hijo5>h2 {
+            font-size: 34px;
+            font-weight: bold;
+        }
+        .hijo5>p {
+            font-size: 25px;
+        }
+        /* media query */
+        @media screen and (max-width: 480px){
+            .container {
+                width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+
+        }
+        .hijo1{
+            width: 100%;
+            display: flex;
+            flex-flow: column wrap;
+        }
+        .hijo2{
+            width: 100%;
+            display: flex;
+            flex-flow: column wrap;
+        }
+        .hijo3{
+            width: 100%;
+            display: flex;
+            flex-flow: column wrap;
+        }
+        .hijo4{
+            width: 100%;
+            display: flex;
+            flex-flow: column wrap;
+        }
+        .hijo5{
+            width: 100%;
+            display: flex;
+            flex-flow: column wrap;
+        }
+
+
+        }
+   
+
+        @media screen and (min-width: 480px) and (max-width: 1000px) {
+            body{
+                background-color: gray;
+            }
+            .container {
+            width: 100%;
+            max-width: 100vh;
+            display: flex;
+            flex-flow: row wrap;
+
+        }
+        .hijo1 {
+            width: 100%;
+            height: 33px;
+            background-color: gray;
+            
+
+        }
+        .hijo2 {
+            width:20%;
+            height: 100px;
+            
+        }
+        .hijo3{
+            display: flex;
+            width: 80%;
+        }
+       .hijo3 > .parrafo{
+           width: 60%;
+
+       }
+       .hijo3 > .parrafo > h2{
+           font-size: 25px;
+           font-weight: bold;
+           text-align: center;
+       }
+       .hijo3 > .parrafo > p{
+           margin-top: 30px;
+           font-size: 20px;
+      
+       }
+       .hijo3 > .cuadro{
+           width: 40%;
+           height: 300px;
+           align-self: center;
+        background-color: orange;
+        margin: 5px 0 0 10px;
+       
+    }
+    .hijo4{
+        width: 20%;
+        background-color: gray;
+    }
+    .hijo5{
+         
+            width: 80%;
+    }
+    .hijo5 > p{
+        font-size: 20px;
+    }
+
+}
+
+@media screen  and (min-width: 1000px){
+         body{
+            background-color: gray;
+            }
+            .container {
+            width: 100%;
+	        display: flex;
+	        flex-flow: row wrap;
+	        height: 67px;
+        }
+        .hijo1 {
+            width: 100%;
+            background-color: gray;
+            
+
+        }
+        .hijo2 {
+            width:20%;
+            height: 100px;
+            margin-right: 5px;
+            
+        }
+        .hijo3{
+            display: flex;
+            width: 50%;
+            height: 500px;
+       
+        }
+       .hijo3 > .parrafo{
+           width: 60%;
+
+       }
+       .hijo3 > .parrafo > h2{
+           font-size: 25px;
+           font-weight: bold;
+           text-align: center;
+       }
+       .hijo3 > .parrafo > p{
+           margin-top: 30px;
+           font-size: 20px;
+      
+       }
+       .hijo3 > .cuadro{
+           width: 40%;
+           height: 300px;
+           align-self: center;
+        background-color: orange;
+        margin: 5px 0 0 10px;
+       
+    }   
+    .hijo4{
+        width: 0;
+        height: 0;
+        visibility: hidden;
+
+    }
+ 
+    .hijo5{
+         width: 22%;
+         background-color: rgb(70, 70, 70);
+         height: 300px;
+           
+    }
+    .hijo5 p{
+        font-size: 18px;
+    }
+        
+       
+
+}
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="hijo1">
+            <h1>Sate name</h1>
+        </div>
+        <div class="hijo2">
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </div>
+        <div class="hijo3">
+            <div class="parrafo">
+                <h2>Main heading here</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga numquam tempora ad quod impedit et natus
+                    doloribus atque, iste sint voluptates totam vel, minus libero odio voluptate voluptatibus. Commodi,
+                    ipsam.A quaerat iste illo voluptate fugit dolores odio enim, culpa, quasi voluptates debitis iusto
+                    voluptas veritatis modi aliquid explicabo ullam ut nihil quae earum laborum suscipit quas. Praesentium,
+                    nostrum non
+                    tempora ad quod impedit et natus doloribus atque, iste sint voluptates totam vel, minus libero odio
+                    voluptate voluptatibus. Commodi, ipsam.A quaerat iste illo voluptate fugit dolores odio enim, culpa,
+                    quasi voluptates debitis iusto voluptas veritatis modi aliquid explicabo ullam ut nihil quae earum
+                    Praesentium, nostrum non..</p>
+            </div>
+            <div class="cuadro">
+
+            </div>
+           
+        </div>
+        <div class="hijo4">
+
+        </div>
+        <div class="hijo5">
+            <h2>Related info</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quae delectus similique harum eum
+                laboriosam porro dolore amet voluptates, nulla tempora dolor illum, quisquam doloremque possimus velit?
+                Minima, explicabo deserunt!</p>
+        </div>
+    </div>
+</body>
+
+</html>

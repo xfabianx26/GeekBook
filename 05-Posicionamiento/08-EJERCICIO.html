@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-flow: row wrap;
+            width: 60%;
+            height: 100%;
+            margin: 0 auto;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            box-shadow: 1px 1px 3px #000;
+            border: 1px solid;
+            padding: 0 10px 10px 10px;
+            background-color: rgba(248, 247, 247,1.2);
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+            letter-spacing: 1px;
+            
+        }
+     
+        .pdf{
+            position: relative;
+            top: 5px;
+            padding: 5px;
+            color: #fff;
+            font-weight: bold;
+            background-color: red;
+            border-radius: 10px 10px 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <a href="img/Planetas.pdf" download>
+            <img src="img/Planetas.pdf" alt="Nombre del documento" width="104" height="142">
+          </a>
+          <div class=pdf>
+            PDF
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+/*variable en sass*/
+.main__content p {
+  color: #414141;
+  font-size: 18px;
+}
+
+.wrapper {
+  margin: 60px;
+}
+
+footer {
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  background-color: yellow;
+}
+
+.main {
+  background-color: cyan;
+}
+/*# sourceMappingURL=main.css.map */
